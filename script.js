@@ -1,7 +1,7 @@
 // Dynamic Typed Text in Hero Section
 if (document.querySelector(".text")) {
     const typedText = new Typed(".text", {
-        strings: ["Developer", "Web Designer", "Software Engineer", "App Developer"],
+        strings: ["Python Developer", "Software Engineer", "App Developer"],
         typeSpeed: 60,
         backSpeed: 50,
         backDelay: 1200,

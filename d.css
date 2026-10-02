@@ -657,6 +657,14 @@ body {
     width: 70%;
 }
 
+.technical-bars .bar .sql span {
+    width: 85%;
+}
+
+.technical-bars .bar .mongodb span {
+    width: 75%;
+}
+
 .progress-line span::after {
     position: absolute;
     padding: 1px 8px;
@@ -692,6 +700,14 @@ body {
 
 .progress-line.PYTHON span::after {
     content: "70%";
+}
+
+.progress-line.sql span::after {
+    content: "85%";
+}
+
+.progress-line.mongodb span::after {
+    content: "75%";
 }
 
 .progress-line span::before {
@@ -783,6 +799,20 @@ body {
 
 }
 
+.path-5 {
+    animation: animate-path5 1s 0.5s linear forwards;
+    stroke: #0aff00;
+    /* Green color for Team Work */
+
+}
+
+.path-6 {
+    animation: animate-path4 1s 0.5s linear forwards;
+    stroke: #a200b9;
+    /* Green color for Team Work */
+
+}
+
 
 @keyframes animate-path1 {
     100% {
@@ -806,6 +836,20 @@ body {
 }
 
 @keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+        /* Adjusted to correct value */
+    }
+}
+
+@keyframes animate-path5 {
+    100% {
+        stroke-dashoffset: 30;
+        /* Adjusted to correct value */
+    }
+}
+
+@keyframes animate-path6 {
     100% {
         stroke-dashoffset: 75;
         /* Adjusted to correct value */
@@ -858,15 +902,15 @@ body {
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
-    gap: 20px;
+    gap: 10px;
     /* Added gap for spacing */
-    padding: 30px;
+    padding: 10px;
 }
 
 .row {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 80px;
     transition: .4s;
     cursor: crosshair;
 }
@@ -904,7 +948,7 @@ body {
 }
 
 .layer h5 {
-    color: white;
+    color: rgb(0, 0, 0);
     /* Changed to white for better contrast */
     font-size: 20px;
     font-weight: 600;
@@ -912,14 +956,14 @@ body {
 }
 
 .layer p {
-    color: #fff;
+    color: #000000;
     /* Changed to white for better contrast */
     font-size: 1rem;
     line-height: 1.8;
 }
 
 .layer a {
-    color: #ff004f;
+    color: #ee2828;
     /* Changed to anchor tag for proper linking */
     margin-top: 20px;
     font-size: 20px;
